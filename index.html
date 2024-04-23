@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan - Rumah Makan Padang</title>
+    <link rel="stylesheet" href="pem.css">
+</head>
+<body>
+    <header>
+        <h1>Pemesanan</h1>
+        <h3>Rumah Makan mas r</h3>
+    </header>
+
+    <section class="overlay">
+        <div class="popup">
+            <a href="#" class="close-btn" id="closeBtn">&times;</a>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="menu">Pilih Menu:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="menu1" name="menu" value="Nasi Padang" checked>
+                        <label for="menu1">mie goreng</label>
+                        <input type="radio" id="menu2" name="menu" value="Rendang">
+                        <label for="menu2">soto betawi</label>
+                        <input type="radio" id="menu2" name="menu" value="Rendang">
+                        <label for="menu2">sate kambing</label>
+                        <input type="radio" id="menu3" name="menu" value="Gulai">
+                        <label for="menu3">rawon</label>
+                        <input type="radio" id="menu3" name="menu" value="Gulai">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Jumlah Pesanan:</label>
+                    <input type="number" id="quantity" name="quantity" required>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Catatan Tambahan:</label>
+                    <textarea id="notes" name="notes"></textarea>
+                </div>
+                <button type="submit">Pesan</button>
+            </form>
+        </div>
+    </section>
+
+
+</body>
+</html>
